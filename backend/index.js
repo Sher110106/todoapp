@@ -4,6 +4,8 @@ import {createTodo} from "./types.js"
 import {updateTodo} from "./types.js"
 import {todo} from "./db";
 const app=express();
+const cors=require("cors");
+app.use(cors());
 //body{ title:string description:string}
 
 app.use(express.json());
